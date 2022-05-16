@@ -8,7 +8,10 @@
     <script>
         var backgroundAudio = new Audio('Sounds/RUben DIss.mp3');
 
+        PlayAudio();
+
         function PlayAudio() {
+            backgroundAudio.currentTime = 0;
             backgroundAudio.loop = true;
             backgroundAudio.play();
         }
