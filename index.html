@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Hail Ben Wornes</title>
+    <script>
+        var backgroundAudio = new Audio('Sounds/RUben DIss.mp3');
+
+        function PlayAudio() {
+            backgroundAudio.loop = true;
+            backgroundAudio.play();
+        }
+
+        function StopAudio() {
+            backgroundAudio.pause();
+            backgroundAudio.currentTime = 0;
+        }
+    </script>
 </head>
 <body>
-    <a href="https://youtu.be/pXpteDBMd9s">Click Here!</a>
+    <button onclick="PlayAudio()">Play</button>
+    <button onclick="StopAudio()">Stop</button>
+    <u><h1 style="text-align: center;">Intro to Ben Wornes</h1></u>
+    <div style="text-align: center;">
+        <img src="Images/White_and_Navy_Employee_of_the_Month_Award_Certificate.png" alt="Ben Wornes Well Done" style="width: 50%;">
+        <p>Congrats Ben Wornes!</p>
+    </div>
     <br>
-    
+    <p>Ben was awarded this certificate for his hard work and dedication to KFC.</p>
+    <p>His mother has never been so proud of him!</p>
 </body>
 </html>
